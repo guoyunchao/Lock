@@ -15,7 +15,7 @@ public:
 		::LeaveCriticalSection(&_cs);
 	}
 }; 
-static char bufForPrint[50] = {0};
+
 class CReadWriteLock
 {
 public:
@@ -55,7 +55,7 @@ public:
 private:
 	CLock _read;
 	CLock _write;
-	int read_cnt; // ÒÑ¼Ó¶ÁËø¸öÊı
+	int read_cnt; //å·²åŠ é”ä¸ªæ•°
 };
 
 class CAutoLock
